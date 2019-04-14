@@ -1,0 +1,4 @@
+*.Python
+lib/
+__pycache__/
+*.csv
