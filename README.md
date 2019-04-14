@@ -51,7 +51,7 @@ validity of the submission can also be checked by using the `pred.py`
 script to train the model with different seeds and evaluating the
 mean performance of the system.
 
-## Getting started
+## Getting started (modified)
 
 To get started, simply download the files in this repository to a local
 directory.
@@ -63,14 +63,27 @@ following:
 
 ```
 Python==3.5.2
-NumPy==1.11.3
-scikit-learn==0.18.1
+NumPy==1.16.2
+scikit-learn==0.20.3
 TensorFlow==0.12.1
 ```
 
 Please note that compatibility of the saved model with newer versions
 of `TensorFlow` has not been checked. Accordingly, please use the
 `TensorFlow` version listed above.
+
+### Setting the virtual environment
+
+In order to avoid dependencies by the diversity of laptop setting, I would
+recommend to use virtual environment that already exists within the code.
+This is how to activate virtual environment locally.
+
+(First, locate yourself within the repository)
+
+
+* For Mac user only now (Window's instruction will be given in a day)
+
+> source bin/activate
 
 ### Installing
 
@@ -160,5 +173,3 @@ Christian-Albrechts Universität zu Kiel for insightful and constructive
 discussions during system development.
 * Anna Seg of FNC-1 team 'annaseg' for her suggestions on how to split
 the training data for more realistic system evaluation.
-
-
