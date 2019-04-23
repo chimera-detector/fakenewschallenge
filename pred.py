@@ -121,6 +121,8 @@ if mode == 'train':
                 _, current_loss = sess.run([opt_op, loss], feed_dict=batch_feed_dict)
                 total_loss += current_loss
 
+        saver = tf.train.Saver()
+        saver.save(sess, 'Initial-model')
 
         # Predict
         test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
